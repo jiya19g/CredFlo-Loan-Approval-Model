@@ -1,69 +1,56 @@
 
-# **CredFlo Loan Approval Model**
+# CredFlo Loan Approval Model
 
 This project aims to build and evaluate multiple machine learning models for loan approval prediction. The goal is to predict whether a loan applicant will be approved or rejected based on various features such as credit history, income, and other personal details.
 
-## **Technologies Used**
+## Technologies Used
 
-- **Python**
-- **TensorFlow (Keras)**
-- **Scikit-learn**
-- **XGBoost**
-- **SHAP (Shapley Additive Explanations)**
-- **Matplotlib** (for plotting)
+- Python
+- Pandas
+- Numpy
+- Scikit-learn
+- TensorFlow (for neural networks)
+- SHAP (for feature importance visualization)
+- Matplotlib (for data visualization)
+- XGBoost (for model training)
+- Random Forest (for model training)
+- Logistic Regression (for model training)
 
-## **Project Structure**
+## Project Structure
 
-1. **Model1** (Logistic Regression)
-   - A logistic regression model trained using standard machine learning techniques.
-   - Evaluation metrics: Accuracy, Precision, Recall, F1-score.
-   - Performance visualization using ROC curve and confusion matrix.
+1. **Data Preprocessing**: The dataset is cleaned and preprocessed, handling missing values, encoding categorical variables, and scaling features as necessary.
+2. **Model Training**: Multiple models (Logistic Regression, Random Forest, XGBoost, Neural Network) are trained and evaluated.
+3. **Evaluation Metrics**: The models are evaluated using various metrics such as accuracy, precision, recall, F1-score, and ROC-AUC.
+4. **Feature Importance**: SHAP values are used to interpret and visualize feature importance for each model.
+5. **Model Comparison**: The models' performances are compared, and the best-performing model is selected.
+6. **Deployment**: Not covered in this repository, but the models can be integrated into a production environment for loan approval predictions.
 
-2. **Model2** (Random Forest)
-   - A Random Forest classifier used for loan approval predictions.
-   - Evaluation metrics: Accuracy, Precision, Recall, F1-score.
-   - Performance visualization using ROC curve and confusion matrix.
+## Requirements
 
-3. **Model3** (XGBoost)
-   - An XGBoost model for loan approval prediction.
-   - Evaluation metrics: Accuracy, Precision, Recall, F1-score.
-   - Performance visualization using ROC curve and confusion matrix.
+- Python 3.x
+- Pandas
+- Numpy
+- Scikit-learn
+- TensorFlow
+- SHAP
+- Matplotlib
+- XGBoost
 
-4. **Model4** (Neural Network using TensorFlow)
-   - A Neural Network model built with TensorFlow (Keras).
-   - Evaluation metrics: Accuracy, Precision, Recall, F1-score.
-   - Performance visualization using ROC curve and confusion matrix.
-
-5. **SHAP Interpretability**
-   - SHAP (Shapley Additive Explanations) values are used to interpret the models' predictions and understand feature importance.
-
-## **How to Run**
+## How to Run
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/CredFlo-Loan-Approval-Model.git
+   git clone <repository-url>
    ```
-
-2. Install dependencies:
+2. Install the required dependencies:
    ```bash
    pip install -r requirements.txt
    ```
+3. Run the main script to train and evaluate models:
+   ```bash
+   python main.py
+   ```
 
-3. Train and evaluate the models:
-   - You can run each model script separately to train and evaluate the models.
-   - The performance metrics and plots will be saved after each run.
+## License
 
-## **Evaluation and Metrics**
-
-- **Accuracy**: Measures the percentage of correctly predicted loan approval statuses.
-- **Precision**: Measures the proportion of true positive predictions in relation to all positive predictions.
-- **Recall**: Measures the proportion of true positive predictions in relation to all actual positive cases.
-- **F1-score**: Harmonic mean of Precision and Recall, providing a balanced measure of a model's performance.
-
-## **Results**
-
-The models have been trained on the loan approval dataset, and each model's performance has been compared using the metrics mentioned above.
-
-## **License**
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
