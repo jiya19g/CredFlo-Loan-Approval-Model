@@ -69,7 +69,6 @@ python model2.py
 - The SHAP summary plot will show feature importance for the models.
 
 ## **Contributors**
-- [Your Name]
 - [Jiya Gayawer]
 - [Akshat Neolia]
 ---
