@@ -1,8 +1,6 @@
-Here’s a concise and relevant README for your **CredFlo-Loan-Approval-Model** GitHub project:
-
 ---
 
-# **CredFlo Loan Approval Model**
+# **CredFlo - Loan Approval Model**
 
 This project aims to build and evaluate multiple machine learning models for loan approval prediction. The goal is to predict whether a loan applicant will be approved or rejected based on various features such as credit history, income, and other personal details.
 
